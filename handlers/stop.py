@@ -4,7 +4,7 @@ from loader import bot, queue
 
 
 @bot.tree.command()
-async def stop(interaction: discord.Interaction):
+async def stop(interaction: discord.Interaction) -> None:
     """
     Останавливает воспроизведение музыки и очищает очередь.
 

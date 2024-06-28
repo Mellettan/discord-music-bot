@@ -4,7 +4,7 @@ from loader import bot
 
 
 @bot.tree.command()
-async def ping(interaction: discord.Interaction):
+async def ping(interaction: discord.Interaction) -> None:
     """
     Проверка соединения с сервером.
 

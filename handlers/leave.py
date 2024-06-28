@@ -4,7 +4,7 @@ from loader import bot, queue
 
 
 @bot.tree.command()
-async def leave(interaction: discord.Interaction):
+async def leave(interaction: discord.Interaction) -> None:
     """
     Отключает бота от голосового канала.
 
