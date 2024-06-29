@@ -1,0 +1,38 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+{% endblock %}
+{% block body %}
+<div class="player-container">
+    <div class="header">
+        <h1>TORNADO</h1>
+    </div>
+    <div class="now-playing">
+        <p>Сейчас играет:</p>
+        <p class="track">FRIENDLY THUG 52 NGG - All My Members Are CEO</p>
+    </div>
+    <div class="queue">
+        <button class="clear-queue">Очистить очередь</button>
+        <ul class="queue-list">
+            <li class="queue-item">
+                <img src="images/cover1.jpg" alt="cover" class="cover">
+                <p class="track">FRIENDLY THUG 52 NGG - All My Members Are CEO</p>
+            </li>
+            <li class="queue-item">
+                <img src="images/cover2.jpg" alt="cover" class="cover">
+                <p class="track">OG Buda, Toxi$ - Крит</p>
+            </li>
+            <li class="queue-item">
+                <img src="images/cover3.jpg" alt="cover" class="cover">
+                <p class="track">Midix, Chuyko, Lirin - Твоё имя</p>
+            </li>
+            <!-- Repeat for more items -->
+        </ul>
+    </div>
+    <div class="controls">
+        <button class="control-btn">⏸</button>
+        <button class="control-btn">⏭</button>
+    </div>
+</div>
+{% endblock %}
